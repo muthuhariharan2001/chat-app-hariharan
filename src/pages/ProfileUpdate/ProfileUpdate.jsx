@@ -89,7 +89,7 @@ const ProfileUpdate = () => {
                         Upload profile image
                     </label>
                     <input onChange={(e) => setName(e.target.value)} value={name} type="text" placeholder='Your Name' required />
-                    <textarea onChange={(e) => setBio(e.target.bio)} value={bio} placeholder='Write Profile Bio' required></textarea>
+                    <textarea onChange={(e) => setBio(e.target.value)} value={bio} placeholder='Write Profile Bio' required></textarea>
                     <button type="submit">Save</button>
                 </form>
                 <img className='profile-pic' src={ image ? URL.createObjectURL(image) : prevImage ? prevImage : assets.logo_icon} alt="" />
